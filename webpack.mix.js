@@ -13,3 +13,10 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
+
+    if(mix.inProduction()){
+        mix.version();
+    }
+
+// to auto refresh browser similar to "hot" npm script
+//mix.browserSync('dev.nadias');

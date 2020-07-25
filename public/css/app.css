@@ -10928,3 +10928,7 @@ a.text-dark:focus {
   }
 }
 
+.navbar-laravel {
+  background-color: #3490dc;
+}
+
